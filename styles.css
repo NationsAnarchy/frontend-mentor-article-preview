@@ -26,6 +26,10 @@ p {
     color: var(--desaturated-dark-blue);
 }
 
+h1 {
+    color: var(--very-dark-grayish-blue);
+}
+
 .card-container {
     display: flex;
     flex-direction: row;
@@ -74,6 +78,7 @@ img {
 
 .user-name {
     font-weight: 700;
+    color: var(--very-dark-grayish-blue);
 }
 
 .post-date {
