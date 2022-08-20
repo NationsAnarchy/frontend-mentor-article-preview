@@ -33,7 +33,6 @@ h1 {
 .card-container {
     display: flex;
     flex-direction: row;
-    max-height: 600px;
 }
 
 img {
