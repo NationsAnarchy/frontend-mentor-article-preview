@@ -1,63 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <figure>
+          <img
+            src="./images/drawers.jpg"
+            alt="Green drawers with decorative items on top"
+          />
+        </figure>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+        <div class="article-container">
+          <header>
+            <h2>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h2>
+          </header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+          <section class="article-content">
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I've got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </section>
 
-  <title>Frontend Mentor | Article preview component</title>
+          <footer class="article-footer">
+            <div class="author-info">
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="Michelle Appleton"
+                class="avatar"
+              />
+              <div class="author-details">
+                <p class="author-name">Michelle Appleton</p>
+                <time datetime="2020-06-28">28 Jun 2020</time>
+              </div>
+            </div>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+            <button id="shareBtn" class="share-btn" aria-label="Share article">
+              <img src="images/icon-share.svg" alt="Share" />
+            </button>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/fb383caa1f.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap -->
-</head>
-
-<body>
-  <main>
-
-    <div class="card-container">
-      <img src="/images/drawers.jpg" alt="A green drawer with decorative items">
-
-      <div class="content-container">
-
-        <h1>Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home</h1>
-
-        <p>Ever been in a room and felt like something was
-          missing? Perhaps it felt slightly bare and uninviting. I've got some
-          simple tips to help you make any room feel complete.</p>
-
-        <div class="user-container">
-
-          <div class="avatar-container">
-            <img class="avatar" src="images/avatar-michelle.jpg" alt="Michelle Appleton">
-            <ul class="user-info">
-              <li class="user-name">Michelle Appleton</li>
-              <li class="post-date">28 Jun 2020</li>
-            </ul>
-          </div>
-
-          <div class="share-container">
-            <span class="share-icon"><i class="fa-solid fa-share fa-xl"></i></span>
-          </div>
-
+            <div class="social-share-mobile">
+              <span>Share</span>
+              <div class="social-icons">
+                <a
+                  href="http://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./images/icon-facebook.svg" alt="Facebook"
+                /></a>
+                <a href="http://x.com" target="_blank" rel="noopener noreferrer"
+                  ><img src="./images/icon-twitter.svg" alt="Twitter"
+                /></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                  ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+                /></a>
+              </div>
+            </div>
+          </footer>
         </div>
+      </article>
 
+      <div class="social-share-desktop">
+        <div class="social-container-desktop">
+          <span>Share</span>
+          <div class="social-icons">
+            <a
+              href="http://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/icon-facebook.svg" alt="Facebook"
+            /></a>
+            <a href="http://x.com" target="_blank" rel="noopener noreferrer"
+              ><img src="./images/icon-twitter.svg" alt="Twitter"
+            /></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+            /></a>
+          </div>
+        </div>
       </div>
+    </main>
 
-    </div>
-
-  </main>
-</body>
-
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/NationsAnarchy"
+        >Phúc (Scott) Nguyễn</a
+      >.
+    </footer>
+  </body>
 </html>
